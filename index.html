@@ -3198,18 +3198,12 @@
         // Ensure trailing slash before query string
         if (!base.endsWith('/') && !base.includes('?')) base += '/';
 
-        // Build timestamp + random suffix for maximum cache bypassing
+        // Build clean timestamp for instant WhatsApp cache bypassing
         const timestamp = Date.now();
-        const rand = Math.floor(Math.random() * 9000) + 1000;
-        const uniqueParam = `${timestamp}${rand}`;
 
         // Append ?v= parameter
         const separator = base.includes('?') ? '&' : '?';
-        let freshUrl = `${base}${separator}v=${uniqueParam}`;
-
-        if (INVITATION_DATA.customOgImage || localStorage.getItem('wedding_custom_og_image')) {
-          freshUrl += `&img=custom_${uniqueParam}`;
-        }
+        const freshUrl = `${base}${separator}v=${timestamp}`;
 
         // Show output
         if (outputInput) outputInput.value = freshUrl;
