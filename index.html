@@ -1646,26 +1646,35 @@
             </div>
 
             <!-- Quick Action Buttons -->
-            <div class="flex gap-2 pt-0.5">
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-0.5">
               <button type="button"
-                class="flex-[1.2] bg-[#25D366] hover:bg-[#1ebd5a] text-white py-1.5 px-2 rounded-sm font-label-caps text-[9px] font-bold uppercase tracking-wider flex items-center justify-center gap-1 shadow transition-all duration-200"
-                onclick="shareOnWhatsApp()">
-                <svg viewBox="0 0 24 24" class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.16C10.57 20.16 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.05 20.16ZM16.56 14.37C16.31 14.25 15.09 13.65 14.86 13.56C14.63 13.47 14.47 13.43 14.3 13.68C14.14 13.93 13.65 14.5 13.5 14.67C13.35 14.84 13.2 14.86 12.95 14.74C12.7 14.62 11.89 14.35 10.94 13.5C10.2 12.84 9.7 12.03 9.55 11.78C9.4 11.53 9.53 11.4 9.66 11.27C9.77 11.16 9.91 10.98 10.03 10.84C10.15 10.7 10.2 10.6 10.28 10.43C10.36 10.26 10.32 10.12 10.26 10C10.2 9.88 9.71 8.68 9.51 8.18C9.31 7.7 9.11 7.76 8.95 7.75C8.81 7.74 8.64 7.74 8.47 7.74C8.31 7.74 8.04 7.8 7.81 8.05C7.58 8.3 6.94 8.9 6.94 10.12C6.94 11.34 7.83 12.51 7.95 12.68C8.07 12.85 9.69 15.35 12.18 16.43C12.77 16.69 13.23 16.84 13.59 16.95C14.19 17.14 14.73 17.11 15.16 17.05C15.64 16.98 16.64 16.45 16.85 15.86C17.06 15.27 17.06 14.77 17 14.67C16.94 14.57 16.81 14.49 16.56 14.37Z"/></svg>
-                Share Image + Message
+                class="bg-[#25D366] hover:bg-[#1ebd5a] text-white py-2 px-1.5 rounded-sm font-label-caps text-[8.5px] font-bold uppercase tracking-wider flex items-center justify-center gap-1 shadow transition-all duration-200"
+                onclick="shareOnWhatsApp('web')" title="Open directly in WhatsApp Web">
+                <svg viewBox="0 0 24 24" class="w-3.5 h-3.5 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.16C10.57 20.16 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.05 20.16ZM16.56 14.37C16.31 14.25 15.09 13.65 14.86 13.56C14.63 13.47 14.47 13.43 14.3 13.68C14.14 13.93 13.65 14.5 13.5 14.67C13.35 14.84 13.2 14.86 12.95 14.74C12.7 14.62 11.89 14.35 10.94 13.5C10.2 12.84 9.7 12.03 9.55 11.78C9.4 11.53 9.53 11.4 9.66 11.27C9.77 11.16 9.91 10.98 10.03 10.84C10.15 10.7 10.2 10.6 10.28 10.43C10.36 10.26 10.32 10.12 10.26 10C10.2 9.88 9.71 8.68 9.51 8.18C9.31 7.7 9.11 7.76 8.95 7.75C8.81 7.74 8.64 7.74 8.47 7.74C8.31 7.74 8.04 7.8 7.81 8.05C7.58 8.3 6.94 8.9 6.94 10.12C6.94 11.34 7.83 12.51 7.95 12.68C8.07 12.85 9.69 15.35 12.18 16.43C12.77 16.69 13.23 16.84 13.59 16.95C14.19 17.14 14.73 17.11 15.16 17.05C15.64 16.98 16.64 16.45 16.85 15.86C17.06 15.27 17.06 14.77 17 14.67C16.94 14.57 16.81 14.49 16.56 14.37Z"/></svg>
+                WhatsApp Web
               </button>
               <button type="button"
-                class="flex-1 bg-[#128C7E]/15 hover:bg-[#128C7E]/30 text-[#075E54] border border-[#128C7E]/40 py-1.5 px-2 rounded-sm font-label-caps text-[9px] font-bold uppercase tracking-wider flex items-center justify-center gap-1 transition-all duration-200"
-                onclick="downloadPreviewImage()" title="Download Image Card">
+                class="bg-[#128C7E] hover:bg-[#075E54] text-white py-2 px-1.5 rounded-sm font-label-caps text-[8.5px] font-bold uppercase tracking-wider flex items-center justify-center gap-1 shadow transition-all duration-200"
+                onclick="shareOnWhatsApp('mobile')" title="Share with image on Mobile">
+                <svg viewBox="0 0 24 24" class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                  <line x1="12" y1="18" x2="12.01" y2="18"/>
+                </svg>
+                Mobile Share
+              </button>
+              <button type="button"
+                class="bg-[#128C7E]/15 hover:bg-[#128C7E]/30 text-[#075E54] border border-[#128C7E]/40 py-2 px-1.5 rounded-sm font-label-caps text-[8.5px] font-bold uppercase tracking-wider flex items-center justify-center gap-1 transition-all duration-200"
+                onclick="downloadPreviewImage()" title="Download 1200x630 Card Image">
                 <svg viewBox="0 0 24 24" class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                   <polyline points="7 10 12 15 17 10"/>
                   <line x1="12" y1="15" x2="12" y2="3"/>
                 </svg>
-                Download Image
+                Download Card
               </button>
               <button type="button"
-                class="flex-1 bg-[#128C7E]/15 hover:bg-[#128C7E]/30 text-[#075E54] border border-[#128C7E]/40 py-1.5 px-2 rounded-sm font-label-caps text-[9px] font-bold uppercase tracking-wider flex items-center justify-center gap-1 transition-all duration-200"
-                onclick="copyWhatsAppShareLink()">
+                class="bg-[#128C7E]/15 hover:bg-[#128C7E]/30 text-[#075E54] border border-[#128C7E]/40 py-2 px-1.5 rounded-sm font-label-caps text-[8.5px] font-bold uppercase tracking-wider flex items-center justify-center gap-1 transition-all duration-200"
+                onclick="copyWhatsAppShareLink()" title="Copy dynamic share link">
                 <svg viewBox="0 0 24 24" class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                 Copy Link
               </button>
@@ -3071,17 +3080,27 @@
       return `🌺 *MANGAL NIMANTRAN* 🌺\n\nWith the divine blessings of Almighty & our ancestors,\n*${family}* cordially invites you to celebrate the auspicious wedding ceremony of\n\n💍 *${groom} & ${bride}* 💍\n\n📅 *Date:* ${date}\n📍 *Venue:* ${venueName}\n\n✨ *Tap the link below to open our royal interactive wedding card:* ✨\n👉 ${shareUrl}`;
     }
 
-    async function shareOnWhatsApp() {
+    async function shareOnWhatsApp(target = 'auto') {
       const message = generateWhatsAppShareMessage();
+      const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      const isWebTarget = target === 'web' || (target === 'auto' && !isMobileDevice);
 
-      // 1. Try native Web Share API with actual image file attachment (Supported on Mobile & Modern Browsers)
+      // 1. If explicit or auto desktop: Open directly in WhatsApp Web
+      if (isWebTarget && target !== 'mobile') {
+        const encodedMsg = encodeURIComponent(message);
+        const webUrl = `https://web.whatsapp.com/send?text=${encodedMsg}`;
+        window.open(webUrl, '_blank');
+        showShareToast('✦ Opening WhatsApp Web with Card Preview... ✦');
+        return;
+      }
+
+      // 2. If mobile: Try native Web Share API with image file attachment first
       if (navigator.share) {
         try {
           let imageBlob = null;
           const customDataUrl = INVITATION_DATA.customOgImage || localStorage.getItem('wedding_custom_og_image');
 
           if (customDataUrl && customDataUrl.startsWith('data:')) {
-            // Convert custom data URI to blob
             const byteString = atob(customDataUrl.split(',')[1]);
             const mimeString = customDataUrl.split(',')[0].split(':')[1].split(';')[0];
             const ab = new ArrayBuffer(byteString.length);
@@ -3091,7 +3110,6 @@
             }
             imageBlob = new Blob([ab], { type: mimeString });
           } else {
-            // Fetch default preview card image
             const resp = await fetch('og-preview.jpg');
             if (resp.ok) {
               imageBlob = await resp.blob();
@@ -3100,7 +3118,6 @@
 
           if (imageBlob) {
             const imageFile = new File([imageBlob], 'Wedding-Invitation-Card.jpg', { type: 'image/jpeg' });
-            
             if (navigator.canShare && navigator.canShare({ files: [imageFile] })) {
               await navigator.share({
                 title: 'Wedding Invitation',
@@ -3112,11 +3129,11 @@
             }
           }
         } catch(shareErr) {
-          console.log('Native image share fallback to URL:', shareErr);
+          console.log('Mobile share fallback:', shareErr);
         }
       }
 
-      // 2. Direct WhatsApp Web / Mobile API fallback
+      // 3. Mobile WhatsApp App URL fallback
       try {
         const encodedMsg = encodeURIComponent(message);
         const shareUrl = `https://api.whatsapp.com/send?text=${encodedMsg}`;
