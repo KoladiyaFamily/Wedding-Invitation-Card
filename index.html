@@ -1505,24 +1505,82 @@
       <line x1="2" y1="2" x2="22" y2="22" stroke="#B8860B" stroke-width="2"></line>
     </svg>
   </button>
-  <!-- Floating WhatsApp Dynamic Share Button (Cache-Busting for 150+ Guests) -->
-  <button id="whatsapp-share-float-btn" class="fixed bottom-4 left-16 z-[120] bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white border border-[#25D366]/40 px-3.5 py-2 rounded-full flex items-center gap-2 shadow-[0_4px_16px_rgba(37,211,102,0.4)] hover:shadow-[0_6px_22px_rgba(37,211,102,0.7)] hover:scale-105 transition-all duration-300 group" onclick="shareOnWhatsApp()" title="Share on WhatsApp (Instant Fresh Preview)">
-    <span class="relative flex items-center justify-center">
-      <span class="absolute w-4 h-4 bg-white/40 rounded-full animate-ping pointer-events-none"></span>
-      <svg viewBox="0 0 24 24" class="w-5 h-5 text-white shrink-0 fill-current relative z-10" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.16C10.57 20.16 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.05 20.16ZM16.56 14.37C16.31 14.25 15.09 13.65 14.86 13.56C14.63 13.47 14.47 13.43 14.3 13.68C14.14 13.93 13.65 14.5 13.5 14.67C13.35 14.84 13.2 14.86 12.95 14.74C12.7 14.62 11.89 14.35 10.94 13.5C10.2 12.84 9.7 12.03 9.55 11.78C9.4 11.53 9.53 11.4 9.66 11.27C9.77 11.16 9.91 10.98 10.03 10.84C10.15 10.7 10.2 10.6 10.28 10.43C10.36 10.26 10.32 10.12 10.26 10C10.2 9.88 9.71 8.68 9.51 8.18C9.31 7.7 9.11 7.76 8.95 7.75C8.81 7.74 8.64 7.74 8.47 7.74C8.31 7.74 8.04 7.8 7.81 8.05C7.58 8.3 6.94 8.9 6.94 10.12C6.94 11.34 7.83 12.51 7.95 12.68C8.07 12.85 9.69 15.35 12.18 16.43C12.77 16.69 13.23 16.84 13.59 16.95C14.19 17.14 14.73 17.11 15.16 17.05C15.64 16.98 16.64 16.45 16.85 15.86C17.06 15.27 17.06 14.77 17 14.67C16.94 14.57 16.81 14.49 16.56 14.37Z"/>
-    </svg>
-  </button>
 
   <audio id="bg-audio" loop preload="auto"></audio>
 
-  <!-- Admin/Settings floating panel toggle button -->
-  <button id="settings-toggle-btn" class="fixed bottom-4 right-4 z-[120] bg-[#800000] text-[#B8860B] border border-[#B8860B] w-10 h-10 rounded-full flex items-center justify-center shadow-lg opacity-25 hover:opacity-100 transition-opacity duration-300" onclick="toggleSettingsModal(true)" title="Admin Settings">
-    <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="12" cy="12" r="3"/>
-      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0 2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-    </svg>
-  </button>
+  <!-- Secure Admin Login Modal (Triggered by Ctrl + Shift + A) -->
+  <div id="admin-login-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[180] flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+    <div class="bg-[#FBF9F1] border-2 border-[#B8860B] p-6 sm:p-7 rounded-sm shadow-2xl max-w-md w-full relative mx-4">
+      <!-- Decorative gold corners -->
+      <div class="absolute top-2 left-2 w-3.5 h-3.5 border-t-2 border-l-2 border-[#B8860B]"></div>
+      <div class="absolute top-2 right-2 w-3.5 h-3.5 border-t-2 border-r-2 border-[#B8860B]"></div>
+      <div class="absolute bottom-2 left-2 w-3.5 h-3.5 border-b-2 border-l-2 border-[#B8860B]"></div>
+      <div class="absolute bottom-2 right-2 w-3.5 h-3.5 border-b-2 border-r-2 border-[#B8860B]"></div>
+
+      <div class="flex justify-between items-start mb-4 pb-2 border-b border-[#B8860B]/30">
+        <div>
+          <div class="flex items-center gap-2">
+            <svg viewBox="0 0 24 24" class="w-5 h-5 text-[#800020]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <h3 class="font-headline-md text-xl heading-gradient">Royal Admin Access</h3>
+          </div>
+          <p class="font-label-caps text-[9px] text-[#800020] uppercase tracking-wider mt-0.5">Authorized Family Administrators Only</p>
+        </div>
+        <button type="button" class="text-[#5a413d] hover:text-[#800020] p-1 transition-colors" onclick="closeAdminLoginModal()" title="Close">
+          <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="admin-login-form" onsubmit="handleAdminLogin(event)" class="flex flex-col gap-3.5 text-left font-body-sm">
+        <div id="admin-login-error" class="hidden bg-[#800020]/10 border border-[#800020]/40 text-[#800020] text-xs px-3 py-2 rounded-sm font-semibold flex items-center gap-1.5">
+          <svg viewBox="0 0 24 24" class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          <span id="admin-login-error-text">Invalid Admin Email or Password</span>
+        </div>
+
+        <div>
+          <label class="block font-label-caps text-[9.5px] uppercase tracking-wider text-[#5a413d] mb-1 font-bold">Admin Email ID</label>
+          <div class="relative">
+            <input type="email" id="admin-login-email" required autocomplete="username"
+              class="w-full bg-white border border-[#B8860B]/40 focus:border-[#B8860B] focus:ring-1 focus:ring-[#B8860B]/50 px-3 py-2 rounded-sm text-xs text-[#1b1c17] outline-none"
+              placeholder="admin@wedding.com" />
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <label class="block font-label-caps text-[9.5px] uppercase tracking-wider text-[#5a413d] font-bold">Admin Password</label>
+            <button type="button" class="text-[9px] text-[#B8860B] hover:underline uppercase tracking-wider font-semibold" onclick="togglePasswordVisibility('admin-login-password')">Show / Hide</button>
+          </div>
+          <div class="relative">
+            <input type="password" id="admin-login-password" required autocomplete="current-password"
+              class="w-full bg-white border border-[#B8860B]/40 focus:border-[#B8860B] focus:ring-1 focus:ring-[#B8860B]/50 px-3 py-2 rounded-sm text-xs text-[#1b1c17] outline-none"
+              placeholder="••••••••" />
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 pt-2">
+          <button type="submit"
+            class="flex-1 bg-gradient-to-r from-[#800020] via-[#A00028] to-[#800020] hover:from-[#6B001B] hover:to-[#6B001B] text-[#FBF9F1] border border-[#B8860B]/60 py-2.5 px-4 rounded-sm font-label-caps text-xs font-bold uppercase tracking-wider shadow-md transition-all duration-200 flex items-center justify-center gap-1.5">
+            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+            Unlock Admin Panel
+          </button>
+          <button type="button"
+            class="px-4 py-2.5 border border-[#B8860B]/40 text-[#5a413d] hover:text-[#800020] font-label-caps text-xs uppercase tracking-wider rounded-sm transition-colors"
+            onclick="closeAdminLoginModal()">
+            Cancel
+          </button>
+        </div>
+
+        <p class="text-[9px] text-[#7a6a65] text-center italic mt-1">Shortcut: Press <kbd class="px-1 py-0.5 bg-black/5 border border-black/10 rounded font-mono text-[8px]">Ctrl</kbd> + <kbd class="px-1 py-0.5 bg-black/5 border border-black/10 rounded font-mono text-[8px]">Shift</kbd> + <kbd class="px-1 py-0.5 bg-black/5 border border-black/10 rounded font-mono text-[8px]">A</kbd> anytime.</p>
+      </form>
+    </div>
+  </div>
 
   <!-- Admin settings Modal container -->
   <div id="settings-modal" class="fixed inset-0 bg-black/35 backdrop-blur-[2px] z-[150] flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
@@ -2609,6 +2667,56 @@
               </div>
               <input type="range" id="cfg-music-volume" min="0" max="100" step="1" value="60" class="w-full accent-[#800020] cursor-pointer">
             </div>
+          </div>
+        </div>
+
+        <!-- Accordion 10: Admin Security & Credentials -->
+        <div class="border border-[#B8860B]/30 rounded-sm overflow-hidden bg-ivory-base/60">
+          <button type="button" class="w-full flex justify-between items-center bg-[#B8860B]/15 px-4 py-3 font-headline-sm text-sm text-[#800020] font-bold focus:outline-none" onclick="toggleAccordionSection('security')">
+            <span class="flex items-center gap-2">
+              <svg viewBox="0 0 24 24" class="w-4 h-4 text-antique-gold" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              Admin Security &amp; Credentials
+            </span>
+            <svg viewBox="0 0 24 24" class="w-4 h-4 transform transition-transform duration-200" id="arrow-security" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div id="content-security" class="hidden p-4 flex flex-col gap-3.5 border-t border-[#B8860B]/20">
+            <div class="p-3 bg-[#800020]/5 rounded-sm border border-[#800020]/20 flex items-center justify-between">
+              <div>
+                <span class="font-label-caps text-[9px] uppercase tracking-wider text-[#800020] font-bold block">Current Admin Account</span>
+                <span id="current-admin-email-display" class="font-mono text-xs text-[#1b1c17] font-semibold">admin@wedding.com</span>
+              </div>
+              <span class="text-[9px] bg-[#25D366]/20 text-[#075E54] border border-[#25D366]/40 px-2 py-0.5 rounded font-bold uppercase">Active</span>
+            </div>
+
+            <p class="text-[11px] text-[#5a413d] leading-relaxed">Update your login email and password below. Pressing <kbd class="px-1 py-0.5 bg-black/5 border border-black/10 rounded font-mono text-[9px]">Ctrl + Shift + A</kbd> will require these credentials every time to unlock the Admin Panel.</p>
+
+            <div>
+              <label class="block font-label-caps text-[9px] uppercase tracking-wider text-[#5a413d] font-bold mb-1">New Admin Email ID</label>
+              <input type="email" id="cfg-admin-new-email" class="w-full bg-white border border-[#B8860B]/40 focus:border-[#B8860B] px-3 py-2 outline-none rounded-sm text-xs" placeholder="admin@wedding.com">
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center mb-1">
+                <label class="block font-label-caps text-[9px] uppercase tracking-wider text-[#5a413d] font-bold">New Admin Password</label>
+                <button type="button" class="text-[9px] text-[#B8860B] hover:underline uppercase tracking-wider font-semibold" onclick="togglePasswordVisibility('cfg-admin-new-password')">Show / Hide</button>
+              </div>
+              <input type="password" id="cfg-admin-new-password" class="w-full bg-white border border-[#B8860B]/40 focus:border-[#B8860B] px-3 py-2 outline-none rounded-sm text-xs" placeholder="••••••••">
+            </div>
+
+            <div>
+              <label class="block font-label-caps text-[9px] uppercase tracking-wider text-[#5a413d] font-bold mb-1">Confirm New Password</label>
+              <input type="password" id="cfg-admin-confirm-password" class="w-full bg-white border border-[#B8860B]/40 focus:border-[#B8860B] px-3 py-2 outline-none rounded-sm text-xs" placeholder="••••••••">
+            </div>
+
+            <div id="cfg-admin-cred-msg" class="hidden text-xs py-1.5 px-2.5 rounded-sm font-semibold"></div>
+
+            <button type="button" class="w-full bg-gradient-to-r from-[#800020] via-[#A00028] to-[#800020] hover:opacity-95 text-white py-2 px-3 rounded-sm font-label-caps text-xs font-bold uppercase tracking-wider shadow transition-all duration-200 flex items-center justify-center gap-1.5" onclick="updateAdminCredentials()">
+              <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+              Update Admin Credentials
+            </button>
           </div>
         </div>
 
@@ -4565,6 +4673,155 @@
       }
     }
 
+    // ─── Admin Authentication & Security (Ctrl + Shift + A) ─────────────────
+    const DEFAULT_ADMIN_CREDENTIALS = {
+      email: 'admin@wedding.com',
+      password: 'admin123'
+    };
+
+    function getAdminCredentials() {
+      try {
+        const stored = localStorage.getItem('wedding_admin_credentials');
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (parsed && parsed.email && parsed.password) {
+            return parsed;
+          }
+        }
+      } catch (e) {
+        console.warn('Error reading admin credentials:', e);
+      }
+      return DEFAULT_ADMIN_CREDENTIALS;
+    }
+
+    function saveAdminCredentials(email, password) {
+      try {
+        localStorage.setItem('wedding_admin_credentials', JSON.stringify({ email, password }));
+        return true;
+      } catch (e) {
+        console.error('Error saving admin credentials:', e);
+        return false;
+      }
+    }
+
+    function openAdminLoginModal() {
+      const modal = document.getElementById('admin-login-modal');
+      const emailInput = document.getElementById('admin-login-email');
+      const passwordInput = document.getElementById('admin-login-password');
+      const errorDiv = document.getElementById('admin-login-error');
+      if (!modal) return;
+
+      if (errorDiv) errorDiv.classList.add('hidden');
+      if (passwordInput) passwordInput.value = '';
+      if (emailInput) {
+        const creds = getAdminCredentials();
+        emailInput.value = creds.email || '';
+      }
+
+      modal.classList.remove('hidden');
+      void modal.offsetWidth; // Force reflow
+      modal.classList.remove('opacity-0');
+
+      setTimeout(() => {
+        if (passwordInput) passwordInput.focus();
+      }, 150);
+    }
+
+    function closeAdminLoginModal() {
+      const modal = document.getElementById('admin-login-modal');
+      if (!modal) return;
+      modal.classList.add('opacity-0');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+    }
+
+    function handleAdminLogin(event) {
+      if (event) event.preventDefault();
+      const emailInput = document.getElementById('admin-login-email');
+      const passwordInput = document.getElementById('admin-login-password');
+      const errorDiv = document.getElementById('admin-login-error');
+      const errorText = document.getElementById('admin-login-error-text');
+
+      const enteredEmail = emailInput ? emailInput.value.trim() : '';
+      const enteredPassword = passwordInput ? passwordInput.value : '';
+
+      const creds = getAdminCredentials();
+
+      if (enteredEmail === creds.email && enteredPassword === creds.password) {
+        if (errorDiv) errorDiv.classList.add('hidden');
+        closeAdminLoginModal();
+        // Strict session: Open settings modal for this action
+        toggleSettingsModal(true);
+        showShareToast('✦ Admin Access Granted ✦');
+      } else {
+        if (errorDiv) {
+          errorDiv.classList.remove('hidden');
+          if (errorText) errorText.innerText = 'Invalid Admin Email or Password. Please try again.';
+        }
+        if (passwordInput) {
+          passwordInput.value = '';
+          passwordInput.focus();
+        }
+      }
+    }
+
+    function togglePasswordVisibility(inputId) {
+      const input = document.getElementById(inputId);
+      if (!input) return;
+      input.type = input.type === 'password' ? 'text' : 'password';
+    }
+
+    function updateAdminCredentials() {
+      const newEmailInput = document.getElementById('cfg-admin-new-email');
+      const newPassInput = document.getElementById('cfg-admin-new-password');
+      const confirmPassInput = document.getElementById('cfg-admin-confirm-password');
+      const msgDiv = document.getElementById('cfg-admin-cred-msg');
+      const displayEmail = document.getElementById('current-admin-email-display');
+
+      const newEmail = newEmailInput ? newEmailInput.value.trim() : '';
+      const newPass = newPassInput ? newPassInput.value : '';
+      const confirmPass = confirmPassInput ? confirmPassInput.value : '';
+
+      if (!msgDiv) return;
+      msgDiv.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'border-red-300', 'bg-green-100', 'text-green-700', 'border-green-300', 'border');
+
+      if (!newEmail || !newEmail.includes('@') || !newEmail.includes('.')) {
+        msgDiv.className = 'text-xs py-2 px-3 rounded-sm font-semibold bg-red-100 text-red-700 border border-red-300';
+        msgDiv.innerText = 'Please enter a valid email address.';
+        return;
+      }
+
+      if (!newPass || newPass.length < 4) {
+        msgDiv.className = 'text-xs py-2 px-3 rounded-sm font-semibold bg-red-100 text-red-700 border border-red-300';
+        msgDiv.innerText = 'Password must be at least 4 characters long.';
+        return;
+      }
+
+      if (newPass !== confirmPass) {
+        msgDiv.className = 'text-xs py-2 px-3 rounded-sm font-semibold bg-red-100 text-red-700 border border-red-300';
+        msgDiv.innerText = 'New password and confirm password do not match.';
+        return;
+      }
+
+      saveAdminCredentials(newEmail, newPass);
+      if (displayEmail) displayEmail.innerText = newEmail;
+      if (newPassInput) newPassInput.value = '';
+      if (confirmPassInput) confirmPassInput.value = '';
+
+      msgDiv.className = 'text-xs py-2 px-3 rounded-sm font-semibold bg-green-100 text-green-700 border border-green-300';
+      msgDiv.innerText = '✓ Admin credentials updated successfully! Use these next time.';
+      showShareToast('✦ Admin Credentials Updated ✦');
+    }
+
+    // Global keyboard listener for Ctrl + Shift + A
+    document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey && e.shiftKey && (e.key === 'A' || e.key === 'a' || e.code === 'KeyA')) {
+        e.preventDefault();
+        openAdminLoginModal();
+      }
+    });
+
     // Toggle Settings Modal visibility
     function toggleSettingsModal(show, isSaved = false) {
       const modal = document.getElementById('settings-modal');
@@ -4731,6 +4988,14 @@
         const volPercent = Math.round((typeof m.volume === 'number' ? m.volume : 0.6) * 100);
         if (document.getElementById('cfg-music-volume')) document.getElementById('cfg-music-volume').value = volPercent;
         if (document.getElementById('cfg-music-volume-label')) document.getElementById('cfg-music-volume-label').innerText = volPercent + '%';
+
+        // 10. Admin Security Settings
+        const adminCreds = getAdminCredentials();
+        if (document.getElementById('current-admin-email-display')) document.getElementById('current-admin-email-display').innerText = adminCreds.email;
+        if (document.getElementById('cfg-admin-new-email')) document.getElementById('cfg-admin-new-email').value = adminCreds.email;
+        if (document.getElementById('cfg-admin-new-password')) document.getElementById('cfg-admin-new-password').value = '';
+        if (document.getElementById('cfg-admin-confirm-password')) document.getElementById('cfg-admin-confirm-password').value = '';
+        if (document.getElementById('cfg-admin-cred-msg')) document.getElementById('cfg-admin-cred-msg').classList.add('hidden');
 
         setupLivePreviewListeners();
 
@@ -5294,6 +5559,11 @@
     window.toggleMusic = toggleMusic;
     window.toggleAdminAudioTest = toggleAdminAudioTest;
     window.initAudioEngine = initAudioEngine;
+    window.openAdminLoginModal = openAdminLoginModal;
+    window.closeAdminLoginModal = closeAdminLoginModal;
+    window.handleAdminLogin = handleAdminLogin;
+    window.updateAdminCredentials = updateAdminCredentials;
+    window.togglePasswordVisibility = togglePasswordVisibility;
 
     // ─── Viewport Reset Helper ───────────────────────────────────────────────
     function resetViewportToTop() {
@@ -5559,17 +5829,6 @@
       animation: musicPulseGlow 2.5s infinite ease-in-out;
       border-color: #D4AF37 !important;
       opacity: 1 !important;
-    }
-
-    /* ── Settings gear button ── */
-    #settings-toggle-btn {
-      transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1),
-                  box-shadow 0.25s ease,
-                  opacity 0.3s ease;
-    }
-    #settings-toggle-btn:hover {
-      transform: rotate(30deg) scale(1.1);
-      box-shadow: 0 0 20px rgba(184,134,11,0.45);
     }
 
     /* ── Admin save button ── */
